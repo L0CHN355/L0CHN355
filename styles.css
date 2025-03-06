@@ -1,0 +1,125 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(175, 30, 30); /* color behind the sections */
+}
+
+/* Navigation Bar */
+nav {
+    background: rgb(0, 0, 0); /* navbar background color */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(31, 31, 31, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #007BFF; 
+    border-radius: 5px;
+}
+
+
+header {
+    background: rgb(0, 0, 0); /* header background color */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+/* Ensure sections have space below the fixed navbar */
+
+section {
+    width: 80%;
+    margin: 20px auto;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.slider-container {
+    width: 80%;
+    max-width: 1000px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.slider img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    background: rgb(0, 0, 0);
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 0%;
+    transition: width 0.5s;
+}
